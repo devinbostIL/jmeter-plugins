@@ -209,7 +209,7 @@ public class JSONPathExtractorTest {
         instance.setSubject(JSONPathExtractor.SUBJECT_VARIABLE);
         instance.setSrcVariableName("SVAR");
         instance.process();
-        assertEquals("{\"color\":\"red\", \"price\":19.95}", vars.get("test"));
+        assertEquals("{\"color\":\"red\",\"price\":19.95}", vars.get("test"));
     }
     @Test
     public void testProcess_list() {
@@ -311,5 +311,5 @@ public class JSONPathExtractorTest {
         assertEquals("{value=1}", vars.get("var"));
     }
 
-    
+
 }
